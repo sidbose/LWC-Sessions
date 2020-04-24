@@ -1,0 +1,47 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/accountManagerApex": [
+                "accountManagerApex/accountManagerApex.js"
+            ],
+            "c/accountManagerLDS": [
+                "accountManagerLDS/accountManagerLDS.js"
+            ],
+            "c/accountManagerLDSForms": [
+                "accountManagerLDSForms/accountManagerLDSForms.js"
+            ],
+            "c/conditionalRendering": [
+                "conditionalRendering/conditionalRendering.js"
+            ],
+            "c/helloWorld": [
+                "helloWorld/helloWorld.js"
+            ],
+            "c/simpleCalculator": [
+                "simpleCalculator/simpleCalculator.js"
+            ],
+            "c/meetingRoom": [
+                "meetingRoom/meetingRoom.js"
+            ],
+            "c/meetingRooms": [
+                "meetingRooms/meetingRooms.js"
+            ],
+            "c/selectedMeetingRoom": [
+                "selectedMeetingRoom/selectedMeetingRoom.js"
+            ],
+            "c/pubsub": [
+                "pubsub/pubsub.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}

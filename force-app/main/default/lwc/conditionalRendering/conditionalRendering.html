@@ -1,0 +1,20 @@
+<template>
+    <lightning-input type="checkbox" onchange={showDivHandler}></lightning-input>
+
+    <template if:true={displayDiv}>
+            <div>You have checked the above checkbox</div>
+    </template>
+    <template if:false={displayDiv}>
+            <div>You have not checked the above checkbox</div>
+    </template>
+
+    <template for:each={cityList} for:item="city">
+        <p key={city}>{city}</p>
+    </template>
+
+    <h1>Below list is populated using an iterator</h1>
+    <template iterator:it={cityList}>
+        <p key={it.value}>{it.value}</p>
+    </template>
+    
+</template>
